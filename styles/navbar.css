@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color: black;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-left .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 4rem;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar-right .icon-button .bi {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.navbar-right .icon-button:hover .bi {
+    color: #007BFF;
+}
+
+.navbar-text {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+#logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#logout-button .bi {
+    font-size: 2.5rem;
+    color: black;
+}
+
+#logout-button:hover .bi {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    .navbar-right .icon-button .bi {
+        font-size: 2rem;
+    }
+
+    #user-greeting {
+        display: none;
+    }
+}

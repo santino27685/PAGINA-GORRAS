@@ -1,0 +1,189 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-hero {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1300px;
+}
+
+.admin-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.admin-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+#admin-panel {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#admin-panel h2 {
+    color: #2980b9;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+#product-form {
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    font-weight: bold;
+    color: black;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+#product-list {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#product-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#product-list .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+#product-list .btn-group {
+    display: flex;
+}
+
+.btn-group .btn {
+    margin-left: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary {
+    color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: red;
+    border-color: red;
+}
+
+.btn-outline-danger:hover {
+    background-color: red;
+    color: #fff;
+}
+
+#logout-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#logout-button:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+footer {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+    display: inline;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.normal-price {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.admin-hero,
+#admin-panel {
+    animation: fadeInUp 0.2s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 768px) {
+    .admin-hero h1 {
+        font-size: 2rem;
+    }
+
+    .admin-hero p {
+        font-size: 1rem;
+    }
+
+    #admin-panel {
+        padding: 1.5rem;
+    }
+}

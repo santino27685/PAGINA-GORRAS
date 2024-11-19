@@ -1,0 +1,139 @@
+.product-hero {
+    background-color: #efeef2;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #c2c2c2;
+    border-radius: 0.25rem;
+
+}
+
+.product-hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.product-hero p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    height: 350px;
+    object-fit: cover;
+    object-position: 0 65%;
+    border-radius: 0.25rem;
+}
+
+.product-card .card-body {
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+
+.product-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .card-text {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.buy-button {
+    background-color: #ff7d5d;
+    border-color: #ff7d5d;
+    color: white;
+    font-weight: bold;
+}
+
+.buy-button:hover {
+    background-color: #ff5733;
+    border-color: #e04e2a;
+    font-weight: bold;
+}
+
+.offer-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.best-seller-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .product-hero h1 {
+        font-size: 2rem;
+    }
+
+    .product-hero p {
+        font-size: 1rem;
+    }
+
+    #search-bar {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+}

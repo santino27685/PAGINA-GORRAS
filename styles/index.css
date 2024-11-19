@@ -1,0 +1,237 @@
+body {
+    background-color: #efeef2;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1534215754734-18e55d13e346?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.features .feature {
+    text-align: center;
+    padding: 1rem;
+    flex-basis: calc(33.333% - 2rem);
+    margin: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .feature:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+a.btn.btn-primary.mt-4 {
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    background-color: #efeef2;
+    border-radius: 40px;
+    border-color: #000000;
+    margin-bottom: 40px;
+}
+
+a.btn.btn-primary.mt-4:hover {
+    background-color: #ff5733;
+    color: rgb(255, 255, 255);
+    border-color: #ff5733;
+    transition: 0.5s;
+}
+
+/* SALES */
+
+.hero-sales {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(https://www.infobae.com/resizer/v2/https%3A%2F%2Fs3.amazonaws.com%2Farc-wordpress-client-uploads%2Finfobae-wp%2Fwp-content%2Fuploads%2F2019%2F01%2F18200625%2Fgorro-punta-del-este-1.jpg?auth=58bdb01a7cffc767bdfffc3ae35c426f540317adcacc88fc4dc77e60c766ae64&smart=true&width=1024&height=512&quality=85);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 4px solid #000000;
+    text-align: center;
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.hero-sales::before,
+.hero-sellers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 0.25rem;
+}
+
+.hero-sellers {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(https://sombrerosalbero.es/img/cms/cabeceras-2024/Goorin_Wildlife_2024_alb.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 4px solid #000000;
+    text-align: center;
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.hero-sales .hero-content,
+.hero-sellers .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-sales:hover,
+.hero-sellers:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-sales h2,
+.hero-sellers h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-sales p,
+.hero-sellers p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .hero-sales,
+    .hero-sellers {
+        height: 300px;
+    }
+
+    .hero-sales,
+    .hero-sellers h2 {
+        font-size: 2rem;
+    }
+
+    .hero-sales,
+    .hero-sellers p {
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.feature {
+    animation: fadeInUp 0.5s ease-out;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .feature {
+        flex-basis: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .feature {
+        flex-basis: 100%;
+    }
+}

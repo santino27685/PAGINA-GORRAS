@@ -1,0 +1,64 @@
+#login-form,
+#login-panel {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2,
+#login-panel h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#product-form {
+    margin-bottom: 2rem;
+}
+
+#product-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product-list .btn-group {
+    display: flex;
+}
+
+.btn-group .btn {
+    margin-left: 0.5rem;
+}
+
+.col-md-6 {
+    margin-top: 10%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#login-form,
+#login-panel {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+    .login-hero h1 {
+        font-size: 2rem;
+    }
+
+    .login-hero p {
+        font-size: 1rem;
+    }
+}
